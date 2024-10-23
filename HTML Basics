@@ -1,0 +1,88 @@
+HTML BASICS
+
+HTML and CSS
+
+HTML is the raw data that a webpage is built out of. All the text, links, cards, lists, and buttons are created in HTML. CSS is what adds style to those plain elements. HTML puts information on a webpage, and CSS positions that information, gives it colour, changes the font, and makes it more presentable.
+
+HTML and CSS are not referred to as programming languages because they are only concerned with presenting information. They are not used to program any logic.
+
+HTML
+
+HTML (HyperText Markup Language) defines the structure and content of webpages. We use HTML elements to create all of the paragraphs, headings, lists, images, and links that make up a typical webpage.
+
+Opening and Closing Tags
+Opening tags tell the browser that this is the start of an HTML element. They are comprised of a keyword enclosed in angle brackets <>. For example, an opening paragraph tag looks like this: <p>.
+Closing tags tell the browser where an element ends. They are almost the same as opening tags; the only difference is that they have a forward slash before the keyword. For example, a closing paragraph tag looks like this: </p>.
+Void Tags
+Some HTML elements do not have a closing tag. These elements just have a single tag, like: <br> or <img>. They are known as void elements because they are void of any content, there is nothing inside of them. No closing tag means they can’t wrap content like other tags do.
+
+
+
+
+
+
+
+
+
+
+Example :
+
+
+
+The DOCTYPE
+Every HTML page starts with a doctype declaration. The doctype’s purpose is to tell the browser what version of HTML it should use to render the document. The latest version of HTML is HTML5, and the doctype for that version is <!DOCTYPE html>.
+HTML Element
+After we declare the doctype, we need to provide an <html> element. This is what’s known as the root element of the document, meaning that every other element in the document will be a descendant of it.
+HEAD Element
+The <head> element is where we put important meta-information about our webpages, and stuff required for our webpages to render correctly in the browser. Inside the <head>, we should not use any element that displays content on the webpage.
+TITLE Element
+The <title> element is used to give webpages a human-readable title, which is displayed in our webpage’s browser tab.
+BODY Element
+The final element needed to complete the HTML boilerplate is the <body> element. This is where all the content that will be displayed to users will go - the text, images, lists, links, etc.
+
+
+Example : 
+
+Paragraphs
+If we want to create paragraphs in HTML, we need to use the paragraph element, which will add a new line after each of our paragraphs. A paragraph element is defined by wrapping text content with a <p> tag.
+Headings
+Headings are different from other HTML text elements: they are displayed larger and bolder than other text to signify that they are headings. There are 6 different levels of headings starting from <h1> to <h6>. The number within a heading tag represents that heading’s level. The largest and most important heading is h1, while h6 is the tiniest heading at the lowest level.
+Strong Element
+The <strong> element makes text bold. It also semantically marks text as important; this affects tools, like screen readers, that users with visual impairments will rely on to use your website. The tone of voice on some screen readers will change to communicate the importance of the text within a strong element.
+EM Element
+The <em> element makes text italic. It also semantically places emphasis on the text, which again may affect things like screen readers. 
+
+
+HTML Comments
+HTML comments are not visible to the browser; they allow us to comment on our code so that other developers or our future selves can read them and get some context about something that might not be clear in the code.
+Example : 
+
+Unordered List
+A list where items that can be brought in any order, then you can use an unordered list. Unordered lists are created using the <ul> element, and each item within the list is created using the list item element <li>. Each list item in an unordered list begins with a bullet point.
+Ordered List
+A list where items that can be brought in a specific order, then you can use an ordered list.Ordered lists are created using the <ol> element. Each individual item in them is again created using the list item element <li>. However, each list item in an ordered list begins with a number.
+Example : 
+
+Anchor Tag
+To create a link in HTML, we use the anchor element. An anchor element is defined by wrapping the text or another HTML element we want to be a link with an <a> tag.
+Href and Target
+While href specifies the destination link, target specifies where the linked resource will be opened. If it is not present, then, by default, it will take on the _self value which opens the link in the current tab. 
+Noopener and Noreferrer
+The noopener value prevents the opened link from gaining access to the webpage from which it was opened.
+The noreferrer value prevents the opened link from knowing which webpage or resource has a link (or ‘reference’) to it. The noreferrer value also includes the noopener behaviour and thus can be used by itself as well.
+Absolute Links
+Links to pages on other websites on the internet are called absolute links. A typical absolute link will be made up of the following parts: scheme://domain/path. An absolute link will always contain the scheme and domain of the destination.
+Relative Links
+Links to other pages within our own website are called relative links. Relative links do not include the domain name, since it is another page on the same site, it assumes the domain name will be the same as the page we created the link on. Relative links only include the file path to the other page, relative to the page you are creating the link on.
+Example : 
+
+
+
+
+
+Images 
+To display an image in HTML we use the <img> element. Unlike the other elements we have encountered, the <img> element is a void element. As we have seen earlier in the course, void elements do not need a closing tag because they are naturally empty and do not contain any content.
+Src attribute
+Instead of wrapping content with an opening and closing tag, it embeds an image into the page using a src attribute which tells the browser where the image file is located. The src attribute works much like the href attribute for anchor tags. It can embed an image using both absolute and relative paths.
+Alt Attribute
+The alt attribute is used to describe an image. It will be used in place of the image if it cannot be loaded. It is also used with screen readers to describe what the image is to visually impaired users.
